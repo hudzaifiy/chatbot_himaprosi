@@ -1,0 +1,64 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teks Tengah Layar</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .teks-utama {
+        font-size: 28px;
+        font-weight: bold;
+        color: blue;
+      }
+
+      .teks-bawah {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="teks-utama">CHATBOT ADA DI UJUNG BAWAH KANAN</div>
+
+      <div class="teks-bawah">"KLIK AJA LOGO WARNA BIRU"</div>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+  Chatbot.init({
+    chatflowid: "741dc17d-f9ae-49b2-a010-7b8e17f26c57",
+    apiHost: "https://cloud.flowiseai.com",
+    theme: {
+      chatWindow: {
+        welcomeMessage:
+          "Haloo! Saya Asisten Himaprosi, ada yang bisa saya bantu?",
+
+        starterPrompts: [
+          "Apa saja kegiatan Himaprosi sekarang?",
+          "Bagaimana cara mendaftar Himaprosi?",
+          "Siapa ketua Himaprosi saat ini?",
+        ],
+      },
+    },
+  });
+</script>
