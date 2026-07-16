@@ -37,6 +37,26 @@
       }
     </style>
   </head>
+  <script type="module">
+  import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+  Chatbot.init({
+    chatflowid: "741dc17d-f9ae-49b2-a010-7b8e17f26c57",
+    apiHost: "https://cloud.flowiseai.com",
+    theme: {
+      chatWindow: {
+        welcomeMessage:
+          "Halo! Saya Asisten HIMAPROSI, ada yang bisa saya bantu?",
+
+        starterPrompts: [
+          "Apa saja program kerja HIMAPROSI sekarang?",
+          "Bagaimana cara mendaftar HIMAPROSI?",
+          "Siapa ketua HIMAPROSI saat ini?",
+          "Struktur kepengurusan HIMAPROSI sekarang?",
+        ],
+      },
+    },
+  });
+</script>
 </html>
 
 
